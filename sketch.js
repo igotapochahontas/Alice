@@ -17,12 +17,12 @@ function setup() {
   bot.loadFile("brain.rive", brainReady, brainError);
 
   function brainReady() {
-    alert('Chatbot ready!');
+    window.alert('Chatbot ready!');
     bot.sortReplies();
   }
 
   function brainError() {
-    JavaScript.alert('Chatbot error!')
+    window.alert('Chatbot error!')
   }
 
 

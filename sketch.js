@@ -17,12 +17,12 @@ function setup() {
   bot.loadFile("brain.rive", brainReady, brainError);
 
   function brainReady() {
-    alert('Chatbot ready!');
+    window.alert('Chatbot ready!');
     bot.sortReplies();
   }
 
   function brainError() {
-    alert('Chatbot error!')
+    window.alert('Chatbot error!')
   }
 
 
@@ -38,7 +38,8 @@ function setup() {
       //user_input.value(input);
       let reply = bot.reply("local-user", input);
       speech.speak(reply);
-      output.html(reply);
+     
+      window.alert(reply);
     }
   }
 
